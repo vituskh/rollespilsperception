@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="da-dk" class="has-text-centered">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Succeser?</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.0/css/bulma.css"/>
+        <script src="main.js"></script>
+    </head>
+    <body>
+        <p>Vitus perception:</p> <input id="vitusPerception" type="number" value="73">
+        <p>Vagt 1 perception(default Aske):</p> <input id="vagt1Perception" type="number" value="61">
+        <p>Vagt 2 perception(default Benjamin):</p> <input id="vagt2Perception" type="number" value="75">
+        <p>Vagt 3 perception(default Rune):</p> <input id="vagt3Perception" type="number" value="51">
+
+        <p>Rul så mange gange:</p> <input id="times" type="number">
+        <br>
+        <button class="button" onclick="roll(Number(document.getElementById('times').value))">Rul</button>
+        <br>
+        <h class="h1">Succeser?</h1>
+        <br>
+        <div>
+            <div id="output"></div>
+        </div>
+    </body>
+</html>

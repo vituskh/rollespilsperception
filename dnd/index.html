@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="da-dk" class="has-text-centered">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Succeser?</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.0/css/bulma.css"/>
+        <script src="main.js"></script>
+    </head>
+    <body>
+        <p>Vagt 1 person 1 perception modifier (med proficiency bonus):</p> <input id="vagt11Perception" type="number">
+        <p>Vagt 1 person 2 perception modifier (med proficiency bonus):</p> <input id="vagt12Perception" type="number">
+        <p>Vagt 2 person 1 perception modifier (med proficiency bonus):</p> <input id="vagt21Perception" type="number">
+        <p>Vagt 2 person 2 perception modifier (med proficiency bonus):</p> <input id="vagt22Perception" type="number">
+        <p>Vagt 3 person 1 perception modifier (med proficiency bonus):</p> <input id="vagt31Perception" type="number">
+        <p>Vagt 3 person 2 perception modifier (med proficiency bonus):</p> <input id="vagt32Perception" type="number">
+
+        <p>Hvor mange dage?</p> <input id="times" type="number">
+        <br>
+        <button class="button" onclick="roll(Number(document.getElementById('times').value))">Rul</button>
+        <br>
+        <h class="h1">Output?</h1>
+        <br>
+        <div>
+            <div id="output"></div>
+        </div>
+    </body>
+</html>
